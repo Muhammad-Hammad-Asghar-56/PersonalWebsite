@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@emotion/core": "*",
-    "@emotion/styled": "^11.11.0",
+    "@emotion/styled": "*",
     "tailwindcss": "^3.3.2"
   }
 }
