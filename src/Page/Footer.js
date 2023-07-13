@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { SocialIcon } from "react-animated-social-icons";
-import { AnimatedSocialIcon } from "react-animated-social-icons";
+// import { SocialIcon } from "react-animated-social-icons";
+// import { AnimatedSocialIcon } from "react-animated-social-icons";
 import { useContext } from "react";
 import { ModeContext } from "../Context/ModeContext";
 import { github } from "../asserts";
@@ -20,7 +20,7 @@ const Footer = () => {
           className="w-full rounded-t-3xl flex  justify-center"
           style={mode === "dark" ? darkMode : lightMode}
         >
-          <div className="flex my-4 flex-row">
+          {/* <div className="flex my-4 flex-row">
             <AnimatedSocialIcon
               className="flex-1"
               brandName="github"
@@ -66,7 +66,7 @@ const Footer = () => {
               animationDuration={0.8}
               style={{ marginRight: "20px" }}
             />
-          </div>
+          </div> */}
         </div>
         <div className="font-normal text-sm text-center" style={mode === "dark" ? darkMode : lightMode}>
           All rights reserved. Copyright © 2023 M H Asghar
