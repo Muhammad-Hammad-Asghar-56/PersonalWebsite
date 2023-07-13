@@ -4,7 +4,6 @@ import SoftwareImages from "../Component/SoftwareImages";
 import { github, cSharp, netCore, java, intelliJ, python, selenium, mongoDB, expressJS, nodeJS, react, mssql, mysql, darkProfilePic,lightProfilePic } from "../asserts/index";
 import { useContext } from "react";
 import { ModeContext } from "../Context/ModeContext";
-import { motion } from "framer-motion"
 
 
 const Home = () => {
@@ -39,11 +38,11 @@ const Home = () => {
         style={mode === "dark" ? { background: "#0D1B2A" } : {}}
       >
         <div className="mx-6 lg:mx-24 w-2/3 flex-1">
-          <motion.div className="text-4xl md:text-5xl lg:text-6xl mb-4">
+          <div className="text-4xl md:text-5xl lg:text-6xl mb-4">
             <span className="font-extrabold" style={mode==="dark"? {color:"#FFB703"}:{color:"white"}}>{"Hi! "} 
             </span>
             <span className="font-semibold">I'm Hammad</span>
-          </motion.div>
+          </div>
           <div className="text-lg md:text-2xl lg:text-3xl text-left">
             a{" "}
             <span style={mode==="dark"? {color:"#FFB703"}:{}}>
