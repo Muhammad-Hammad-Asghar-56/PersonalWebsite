@@ -8,7 +8,7 @@ const About = () => {
   const { mode } = context;
   const darkMode={background:"#0D1B2A",color:"white"}
   return (
-    <div className={`flex flex-row w-full h-screen `} style={mode==="dark"? darkMode:{}}>
+    <div id="about" className={`px-8 flex flex-row w-full h-screen `} style={mode==="dark"? darkMode:{}}>
       <div className="h-full flex-1 hidden lg:block">
         <img
           src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg"

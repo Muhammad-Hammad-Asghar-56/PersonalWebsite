@@ -13,7 +13,7 @@ const Contact = () => {
   const darkMode = { background: "#0D1B2A", color: "white" };
 
   return (
-    <div style={mode === "dark" ? darkMode : {}}>
+    <div id="contact" style={mode === "dark" ? darkMode : {}}>
       <div className="text-center py-10">
         <h1 className={`${mode==="dark"? "text-white":"text-black"} text-opacity-50 text-xl`}>
         Keep in Touch
@@ -21,8 +21,8 @@ const Contact = () => {
         <h1 className="font-bold text-3xl">Contact</h1>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-stretch">
-        <div className="flex-1 md:mr-4 mb-4 md:mb-0">
+      <div className="flex flex-col pb-8 md:flex-row justify-center items-stretch">
+        <div className="flex-1 mx-6 md:mr-4 mb-4 md:mb-0">
           <InfoCard
             classes="mx-auto"
             title={<img width={20} height={20} src={phone} alt="Phone" />}
@@ -47,7 +47,7 @@ const Contact = () => {
             ]}
           />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 px-8">
           <EmailComponent classes="pr-10 sm: px-2" />
         </div>
       </div>

@@ -1,25 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { mhLogo } from "../asserts/index";
 import { useContext } from "react";
 import { ModeContext } from "../Context/ModeContext";
+import { Link } from "react-scroll";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 const Navbar = () => {
   const context = useContext(ModeContext);
   const { mode, toggleMode } = context;
+  const {onhover,setOnhover}=useState(false)
   const paths = [
-    { text: "Home", path: "#" },
-    { text: "About", path: "#" },
-    { text: "Skills", path: "#" },
-    { text: "Service", path: "#" },
+    { text: "Home", componentID: "home"},
+    { text: "About", componentID: "about"},
+    { text: "Projects", componentID: "projects"},
+    { text: "Service", componentID: "service"},
+    { text: "Contact", componentID: "contact"}
   ];
-  const darkMode={background:"linear-gradient(to bottom, #FFB703,#0D1B2A)",color:"white" }
-    // #0D1B2A)"}
-  
+  const darkMode = {
+    background: "linear-gradient(to bottom, #FFB703,#0D1B2A)",
+    color: "white",
+  };
+  // #0D1B2A)"}
+
   return (
     <nav
       class={`flex items-center justify-between p-6 lg:px-8`}
       aria-label="Global"
-      style={mode==="dark"? darkMode:{}}
+      style={mode === "dark" ? darkMode : {}}
     >
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
@@ -55,13 +62,17 @@ const Navbar = () => {
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         {paths.map((item, index) => (
-          <a
-            href={item.path}
+          <div
+          onMouseEnter={()=>{setOnhover(true)}}
+          onMouseLeave={()=>{setOnhover(false)}}
+          className={`underline-div ${hover? "underline":""}`}
             key={index}
             class="text-sm font-semibold leading-6"
           >
-            {item.text}
-          </a>
+            <Link to={item.componentID} smooth={true} duration={500}>
+              {item.text}
+            </Link>
+          </div>
         ))}
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">

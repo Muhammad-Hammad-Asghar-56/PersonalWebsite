@@ -19,7 +19,7 @@ const InfoCard = ({ title, details, classes }) => {
       </h5>
       {details.map((item, index) => (
         <div className="flex ml-6 sm:flex-row border-gray-200 mt-4" key={index}>
-          <p className="font-semibold  sm:text-right">{Object.keys(item)[0] }  :</p>
+          <p className="font-semibold  sm:text-right ml-2">{Object.keys(item)[0] }  :</p>
           <p className="font-normal ">{Object.values(item)[0]}</p>
         </div>
         // 

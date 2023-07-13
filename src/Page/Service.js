@@ -14,7 +14,7 @@ const Service = () => {
   
   const crouselDarkMode = { background: "#FFB703", color: "#0D1B2A" };
   return (
-    <div className="w-full py-6 text-white" style={mode === "dark" ? darkMode : {background: "#6223FF"}}>
+    <div id="service" className="w-full py-6 text-white" style={mode === "dark" ? darkMode : {background: "#6223FF"}}>
       <div className="text-center mt-14 my-6">
         <h1 className="text-white text-opacity-50 text-xl ">
           What I Offered ?

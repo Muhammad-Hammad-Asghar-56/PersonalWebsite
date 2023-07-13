@@ -12,7 +12,7 @@ const Expirence = () => {
   const darkMode={background:"#0D1B2A",color:"white"}
 
   return (
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-18" style={mode==="dark"?darkMode:{}}>
+      <div id="expirence" className="w-full py-8 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-18" style={mode==="dark"?darkMode:{}}>
         <div className="text-center py-10">
           <h1  className={`${mode==="dark"? "text-white":"text-black"} text-opacity-50 text-xl`}>What I have?</h1>
           

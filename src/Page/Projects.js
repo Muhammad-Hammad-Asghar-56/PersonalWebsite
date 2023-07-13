@@ -23,7 +23,7 @@ const Projects = () => {
   const { mode } = context;
   const darkMode = { background: "#0D1B2A", color: "white" };
   return (
-    <div
+    <div id="projects"
       className={`w-full sm:px-10 py-10 lg:px-28 py-10 ${
         mode === "dark" ? "text-white" : "text-black"
       }`}
@@ -35,7 +35,8 @@ const Projects = () => {
         </h1>
         <h1 className="font-bold text-3xl">Projects</h1>
       </div>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-3">
+      {/* <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-3"> */}
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-3 sm:px-4 md:px-8 lg:px-12">
         <ProjectCard
           classes={"rounded-3xl"}
           title={"Logistics Hub"}

@@ -15,7 +15,7 @@ const ProjectCard = ({ classes, title, isVideo, stacks }) => {
     
     <div
     // ${mode==="dark"? "text-gray-800":"text-white"}
-      className={`${classes} h-full px-4 py-4 text-white `}
+      className={`${classes} h-full mx-4 px-4 py-4 text-white`}
       style={mode==="dark"? {background:"#FFB703",color:"#0D1B2A"}:{background:"#6223FF"}}
     >
       <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg flex justify-center">

@@ -34,3 +34,9 @@ export const addr=require('./address.png')
 
 export const darkProfilePic=require('./darkModeProfilePic.png')
 export const lightProfilePic=require('./lightModeProfilePic.png')
+
+export const social_facebook=require('./facebook.png')
+export const social_insta=require('./instagram.png')
+export const social_linkedIn=require('./linkedin.png')
+export const social_github=require('./github_social.png')
+export const social_gitlab=require('./gitlab.png')
